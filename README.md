@@ -24,7 +24,7 @@ The merged file GSE186458_merged_methylation.csv will be saved in the output fol
 
 Step 3. Automate both steps (optional)
   bash 1stStep.sh
-
+![VCF2CpG Workflow](A_flowchart_diagram_in_digital_vector_format_illus.png)
 Output Example
 Chromosome,Position,Methylation_s205,Coverage_s205,Methylation_s207,Coverage_s207
 chr1,10012,0.83,15,0.78,18
