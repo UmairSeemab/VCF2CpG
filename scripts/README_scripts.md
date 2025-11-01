@@ -1,27 +1,22 @@
 VCF2CpG Scripts Folder
 
-This folder contains helper scripts written in Bash, Python, and R to process DNA methylation data.
+This folder contains all helper scripts used for the methylation extraction, merging, and downstream analysis workflow.
 
-Instructions
+Files:
+- 1stStep.sh : Runs the entire process automatically.
+- extract_methylation_vcf.py : Extracts methylation and coverage from VCF files.
+- merge_methylation_csv.py : Merges multiple sample CSVs into one CpG matrix.
+- methylation_analysis.R : Performs downstream R-based analysis such as correlation, visualization, or statistical comparison.
+
+Usage:
 1. Download all scripts in this folder.
-2. Place them in the same directory as your data files (for example, VCF or CSV files).
-3. Rename the input file names inside the scripts to match your own data files.
-   - Example in extract_methylation_vcf.py:
-     extract_vcf("YourSample1.vcf.gz", "sample1.csv")
-     extract_vcf("YourSample2.vcf.gz", "sample2.csv")
-4. Run the scripts step by step or through the provided Bash file.
-
-Typical workflow
-1. Extract CpG data from VCF files
-   python extract_methylation_vcf.py
-2. Merge extracted CSV files
-   python merge_methylation_csv.py
-3. Run everything automatically
+2. Place them in the same directory as your data files (VCF or CSV).
+3. Rename input file names inside scripts to match your data.
+4. Run in order:
    bash 1stStep.sh
-4. Proceed to downstream R analysis
-   Rscript MethylationPipeline.R
+   Rscript methylation_analysis.R
 
-Notes
-- All scripts must be in the same folder as the input data files.
-- Modify file names only, not column headers or script logic.
-- The merged output file will be created in the same directory or an output subfolder, depending on script settings.
+Note:
+- Keep data files and scripts in the same folder.
+- Modify file names only, not column headers or code logic.
+- Output files are saved automatically in the working directory.
