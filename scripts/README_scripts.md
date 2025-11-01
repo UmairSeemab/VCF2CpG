@@ -2,14 +2,6 @@ VCF2CpG Scripts Folder
 
 This folder contains helper scripts written in Bash, Python, and R to process DNA methylation data.
 
-Folder structure
-scripts/
-│
-├── 1stStep.sh
-├── extract_methylation_vcf.py
-├── merge_methylation_csv.py
-├── your_analysis.R
-
 Instructions
 1. Download all scripts in this folder.
 2. Place them in the same directory as your data files (for example, VCF or CSV files).
@@ -27,7 +19,7 @@ Typical workflow
 3. Run everything automatically
    bash 1stStep.sh
 4. Proceed to downstream R analysis
-   Rscript your_analysis.R
+   Rscript MethylationPipeline.R
 
 Notes
 - All scripts must be in the same folder as the input data files.
