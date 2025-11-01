@@ -30,9 +30,5 @@ Chromosome,Position,Methylation_s205,Coverage_s205,Methylation_s207,Coverage_s20
 chr1,10012,0.83,15,0.78,18
 chr1,10027,0.56,12,0.60,10
 
-Citation
-If you use this tool, please cite:
-Seemab, U. (2025). VCF2CpG: Simple Python scripts for extracting and merging CpG methylation data from VCF files. University of Eastern Finland.
-
 License
 MIT License
