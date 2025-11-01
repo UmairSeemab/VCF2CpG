@@ -6,7 +6,7 @@ Files:
 - 1stStep.sh : Runs the entire process automatically.
 - extract_methylation_vcf.py : Extracts methylation and coverage from VCF files.
 - merge_methylation_csv.py : Merges multiple sample CSVs into one CpG matrix.
-- methylation_analysis.R : Performs downstream R-based analysis such as correlation, visualization, or statistical comparison.
+- MethylationPipeline.R : Performs downstream R-based analysis such as correlation, visualization, or statistical comparison.
 
 Usage:
 1. Download all scripts in this folder.
@@ -14,7 +14,7 @@ Usage:
 3. Rename input file names inside scripts to match your data.
 4. Run in order:
    bash 1stStep.sh
-   Rscript methylation_analysis.R
+   Rscript MethylationPipeline.R
 
 Note:
 - Keep data files and scripts in the same folder.
